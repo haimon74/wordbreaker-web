@@ -1,0 +1,101 @@
+:global(body), :global(#root) {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #f6f7fb;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  gap: 12px;
+}
+
+.title {
+  margin-bottom: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+  width: 100%;
+}
+
+.label {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+.select {
+  padding: 8px 24px 8px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #00bfff;
+  font-size: 1.08rem;
+  background: #eaf7ff;
+  color: #0077b6;
+  box-shadow: 0 2px 8px rgba(0,191,255,0.08);
+  transition: border 0.2s, box-shadow 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+  position: relative;
+}
+
+.select:focus {
+  border: 2px solid #0099e6;
+  box-shadow: 0 0 0 2px #b3e6ff;
+}
+
+.button {
+  padding: 7px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #00bfff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,191,255,0.08);
+}
+
+.button:disabled {
+  background: #b5bac0;
+  cursor: not-allowed;
+}
+
+.button:not(:disabled):hover {
+  background: #0099e6;
+}
+
+.status {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 1.1rem;
+} 
